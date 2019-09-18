@@ -1,24 +1,3 @@
-# vue-mg-time-picker-selector
-vue-mg-time-picker-selector
-
-## Installation
-
-```
-npm i vue-mg-time-picker-selector
-```
-
-## Usage
-
-app.js
-
-```javascript
-import DateTimePickerSelector from 'vue-mg-time-picker-selector'
-Vue.component('TimePickerSelector', TimeSelector)
-```
-
-Example:
-
-```html
 <template>
   <section class="container">
     <time-picker-selector v-model="time" :min-minute="minMinute" :max-minute="maxMinute"/>
@@ -31,6 +10,7 @@ Example:
 
 <script>
 import TimePickerSelector from '../src/vue-mg-time-picker-selector'
+import 'bootstrap/dist/css/bootstrap.min.css'
 export default {
   data() {
     return {
@@ -47,8 +27,3 @@ export default {
   },  
 }
 </script>
-```
-
-## License
-
-MIT
